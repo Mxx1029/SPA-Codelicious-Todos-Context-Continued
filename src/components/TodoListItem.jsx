@@ -3,7 +3,7 @@ import { UserContext } from '../contexts/UserContext'
 
 function TodoListItem({ todo, deleteTodo }) {
 
-    const { user, setUser } = useContext(UserContext);
+    const { user } = useContext(UserContext);
 
     const mine = todo.user === user.id;
     return(

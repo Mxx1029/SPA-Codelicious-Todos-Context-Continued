@@ -16,7 +16,8 @@ function Login() {
             return;
         }
 
-        setUser({ id: 1, email, name: "Joel Nenotlep", role: "admin" });
+        const newUserObject = { id: 1, email, name: "Joel Nenotlep", role: "admin" };
+        setUser(newUserObject);
     }
 
     return (
